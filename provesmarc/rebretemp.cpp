@@ -240,7 +240,6 @@ int afegeix (std::string node, std::string dataihora, std::string dades)
   	                                
   	if (node == "005") {
   	        system(("/home/pi/parsealarmafum.sh "+dades).c_str());
-  	        //system(("ssh pi@192.168.1.8 'echo "+dataihora+" Alarma: "+dades+" | sendxmpp -t -u iwannaberich -o gmail.com marcpalaus@gmail.com -f /home/pi/.sendxmpprc'").c_str());
   	}
   	if (node == "006") {
   	        system(("/home/pi/parseaquari.sh "+dades).c_str());

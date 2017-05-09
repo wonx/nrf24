@@ -11,13 +11,13 @@
 # use make all and make install to install the examples
 #
 
-ifeq ($(wildcard ../Makefile.inc), )
+ifeq ($(wildcard Makefile.inc), )
 	$(error Configuration not found. Run ./configure first)
 endif
 
-include ../Makefile.inc
+include Makefile.inc
 
 # define all programs
-PROGRAMS = gettingstarted gettingstarted_call_response transfer pingpair_dyn
+PROGRAMS = gettingstarted gettingstarted_marc
 
 include Makefile.examples
